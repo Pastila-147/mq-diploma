@@ -378,7 +378,7 @@ html {
 }
 .search-button { 
   border: none;
-  min-width: 48px;
+  width: 48px;
   background-image: url(../svg/search.svg);
   background-repeat: no-repeat;
   background-size: 16px;
@@ -894,7 +894,7 @@ cursor: pointer;
     font-size: 16px;
   }
   .search-group {
-    width: 100%;
+    width: calc(100% - 48px);
   }
   .search-field {
     width: 100%;
