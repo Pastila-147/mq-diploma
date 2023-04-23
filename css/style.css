@@ -420,7 +420,7 @@ html {
 .visually-hidden {
   width: 1px;
   height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(0px, 0px, 0px, 0px);
   position: absolute;
 }
 
@@ -1051,7 +1051,7 @@ html {
 
   .top {
     flex-direction: column-reverse;
-    padding-top: 96px;
+    padding-top: 35px;
   }
 
   .title {
