@@ -750,12 +750,13 @@ html {
 }
 
 .form-question:nth-child(n+1) {
-  margin-top: 25px;
+  margin-top: 17px;
 }
 
 .field-label {
   display: block;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .radio-label {
@@ -839,10 +840,6 @@ html {
     padding: 0 35px;
   }
 
-  .top {
-    padding-top: 39px;
-  }
-
   .burger {
     display: block;
     position: relative;
@@ -884,8 +881,6 @@ html {
   }
 
   .trend {
-    width: 48vw;
-    margin-bottom: 0.33%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -947,17 +942,23 @@ html {
 @media (min-width: 641px) and (max-width: 1200px) {
   .header {
     background-image: url('../images/banner-bg-tablet.jpg');
+    margin-bottom: 35px;
+  }
+
+  .top {
+    padding-top: 44px;
+  }
+
+  .logo {
+    width: 160px;
   }
 
   .title {
+    width: 647px;
     font-size: 4rem;
     margin: 88px auto 0px;
     padding-bottom: 112px;
     line-height: 1.35;
-  }
-
-  .header {
-    margin-bottom: 35px;
   }
 
   .section-header {
@@ -985,10 +986,6 @@ html {
     padding: 0 35px;
   }
 
-  /* .basic-page {
-    padding: 0 20px;
-    padding: 0 auto;
-  } */
   .main-news {
     flex: 1 1 100%;
   }
@@ -1017,6 +1014,29 @@ html {
   .shop-item:nth-child(3n) {
     margin-top: 28px;
   }
+
+  .popup {
+    margin-top: 235px;
+  }
+
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+  .trend {
+    width: 48vw;
+    margin-bottom: 0.33%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trend {
+    width: 24%;
+  }
+
+  .trend:not(:last-of-type) {
+    margin-right: 0.33%;
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -1173,13 +1193,19 @@ html {
   .footer {
     margin-top: 39px;
   }
+
+  .popup {
+    top: 55px;
+  }
 }
 
+@media (max-width: 640px) and (orientation: landscape) {
+  .trend {
+    width: 48vw;
+    margin-bottom: 0.33%;
+  }
 
-
-
-
-
-@media (max-width: 640px) and (orientation: portrait) {}
-
-@media (max-width: 640px) and (orientation: landscape) {}
+  .trend:nth-child(odd) {
+    margin-right: 0.33%;
+  }
+}
