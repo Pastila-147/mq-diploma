@@ -881,6 +881,8 @@ html {
   }
 
   .trend {
+    width: 48vw;
+    margin-bottom: 0.33%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1017,24 +1019,6 @@ html {
 
   .popup {
     margin-top: 235px;
-  }
-
-}
-
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
-  .trend {
-    width: 48vw;
-    margin-bottom: 0.33%;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
-  .trend {
-    width: 24%;
-  }
-
-  .trend:not(:last-of-type) {
-    margin-right: 0.33%;
   }
 
 }
@@ -1198,14 +1182,4 @@ html {
     top: 55px;
   }
 }
-
-@media (max-width: 640px) and (orientation: landscape) {
-  .trend {
-    width: 48vw;
-    margin-bottom: 0.33%;
-  }
-
-  .trend:nth-child(odd) {
-    margin-right: 0.33%;
-  }
 }
