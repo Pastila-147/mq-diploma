@@ -79,7 +79,7 @@ html {
   display: flex;
 }
 
-.menu-item:nth-child(n+2) {
+.menu-gap {
   margin-left: 35px;
 }
 
@@ -148,8 +148,7 @@ html {
 }
 
 .trend {
-  width: 24.75%;
-  margin-right: 0.33%;
+  width: calc(25% - 3px);
   flex-grow: 1;
   display: flex;
   min-height: 320px;
@@ -158,6 +157,10 @@ html {
   align-items: flex-end;
   position: relative;
   z-index: 1;
+}
+
+.trend-gap {
+  margin-left: 3px;
 }
 
 .trend::after {
@@ -211,7 +214,7 @@ html {
   display: block;
 }
 
-.trend-menu-item:nth-child(n+2) {
+.trend-menu-gap {
   margin-left: 20px;
 }
 
@@ -295,7 +298,7 @@ html {
   display: block;
 }
 
-.news-menu-item:nth-child(n+2) {
+.news-menu-gap {
   margin-left: 20px;
 }
 
@@ -701,7 +704,7 @@ html {
   background-image: url("../svg/003-tumblr.svg");
 }
 
-.socials-item:nth-child(n+2) {
+.socials-gap {
   margin-left: 30px;
 }
 
@@ -749,7 +752,7 @@ html {
   /* overflow-y: auto; */
 }
 
-.form-question:nth-child(n+1) {
+.form-gap {
   margin-top: 17px;
 }
 
@@ -784,7 +787,7 @@ html {
   background-image: url(../svg/form-circle.svg);
 }
 
-.guess-field-label:nth-child(2) {
+.guess-gap {
   margin-left: 15px;
 }
 
@@ -881,12 +884,20 @@ html {
   }
 
   .trend {
-    width: 48vw;
-    margin-bottom: 0.33%;
+    width: calc(50% - 3px);
+    margin-bottom: 3px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .trend-gap {
+    margin-left: 0;
+  }
+
+.garden, .trip {
+  margin-right: 3px;
+}
 
   .trend-cards {
     flex-wrap: wrap;
@@ -1013,7 +1024,7 @@ html {
     margin-bottom: 10px;
   }
 
-  .shop-item:nth-child(3n) {
+  .shop-gap {
     margin-top: 28px;
   }
 
@@ -1069,7 +1080,7 @@ html {
   }
 
   .trend {
-    width: 100vw;
+    width: 100%;
     margin-top: 3px;
     margin-right: 0px;
     min-height: 230px;
