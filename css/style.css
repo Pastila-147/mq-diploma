@@ -895,9 +895,10 @@ html {
     margin-left: 0;
   }
 
-.garden, .trip {
-  margin-right: 3px;
-}
+  .garden,
+  .trip {
+    margin-right: 3px;
+  }
 
   .trend-cards {
     flex-wrap: wrap;
@@ -1192,5 +1193,4 @@ html {
   .popup {
     top: 55px;
   }
-}
 }
